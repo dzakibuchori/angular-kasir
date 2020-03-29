@@ -1,0 +1,22 @@
+
+<div *ngIf="cart && cart.length > 0 else none">
+
+  <button [routerLink]="['/payment']">Checkout</button>
+  <div id="total">
+    <span>Total</span>
+    <span>{{ getTotalCart() | currency:'IDR':'Rp. ':'3.0':'id' }}</span>
+  </div>
+
+  <div id="cart-detail" *ngFor="let item of cart">
+    <span class="cart-title">{{ item.title }}</span>
+    <span class="cart-price">{{ item.price | currency:'IDR':'Rp. ':'3.0':'id' }}</span>
+    <span class="cart-amount">x {{ item.qty }}</span>
+    <span class="cart-total-price">{{ item.price * item.qty | currency:'IDR':'Rp. ':'3.0':'id' }}</span>
+    <button (click)="addQty(item.id)">+</button>
+    <button (click)="subtractQty(item.id)">-</button>
+    <button (click)="remove(item.id)" class="cart-remove">Remove</button>
+  </div>
+</div>
+<ng-template #none>
+  <p>There's no item in the cart</p>
+</ng-template>
