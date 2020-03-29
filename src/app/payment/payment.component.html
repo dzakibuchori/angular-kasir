@@ -1,0 +1,10 @@
+<h1>Payment</h1>
+<div id="payment-detail" *ngFor="let item of cart">
+  <span class="payment-title">{{ item.title }}</span>
+  <span class="payment-price">{{ item.price | currency:'IDR':'Rp. ':'3.0':'id'  }}</span>
+  <span class="payment-amount">x {{ item.qty }}</span>
+  <span class="payment-total-price">{{ item.qty * item.price | currency:'IDR':'Rp. ':'3.0':'id'  }}</span>
+</div>
+<div id="total-price">{{ getTotalCart() | currency:'IDR':'Rp. ':'3.0':'id'  }}</div>
+<button (click)="clearCart()">Print Bill</button>
+<button routerLink="/">Cancel</button>
