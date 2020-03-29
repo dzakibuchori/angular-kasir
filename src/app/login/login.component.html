@@ -1,0 +1,20 @@
+<div fxLayoutAlign="center center" fxFlexFill class="bg-color-primary">
+  <mat-card fxFlex="25">
+    <h1 fxLayoutAlign="center">Toko Cessa</h1>
+    <form (ngSubmit)="login()" fxLayoutAlign = "stretch" fxLayout="column">
+      <mat-form-field>
+        <label>
+          <input matInput placeholder="username" type="text" name="username" [(ngModel)]="username">
+        </label>
+      </mat-form-field>
+      <mat-form-field>
+        <label>
+          <input matInput placeholder="password" type="password" name="password" [(ngModel)]="password">
+        </label>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">Login</button>
+    </form>
+    <br/>
+    <small fxLayoutAlign="center" class="color-primary">&copy;{{currentYear}} Kasir App by &nbsp;<a href="https://github.com/dzakibuchori" target="_blank" style="text-decoration: none">Dzaki Buchori</a></small>
+  </mat-card>
+</div>
