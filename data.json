@@ -1,0 +1,68 @@
+{
+  "menus" : [
+    {
+      "id": 1,
+      "title": "Cessa Baby Cough & Flu",
+      "description": "Meredakan batuk dan flu",
+      "category": "baby",
+      "price": 35000,
+      "img_name": "cb_blue"
+    },
+    {
+      "id": 2,
+      "title": "Cessa Baby Lenire",
+      "description": "Meredakan tantrum",
+      "category": "baby",
+      "price": 35000,
+      "img_name": "cb_orange"
+    },
+    {
+      "id": 3,
+      "title": "Cessa Baby Fever Drop",
+      "description": "Meredakan tantrum",
+      "category": "baby",
+      "price": 35000,
+      "img_name": "cb_red"
+    },
+    {
+      "id": 4,
+      "title": "Cessa Baby Bugs Away",
+      "description": "Mencegah gigitan nyamuk",
+      "category": "baby",
+      "price": 35000,
+      "img_name": "cb_green"
+    },
+    {
+      "id": 5,
+      "title": "Cessa Kids Cough & Flu",
+      "description": "Meredakan batuk dan flu",
+      "category": "kids",
+      "price": 52000,
+      "img_name": "ck_blue"
+    },
+    {
+      "id": 6,
+      "title": "Cessa Kids Lenire",
+      "description": "Meredakan tantrum",
+      "category": "kids",
+      "price": 52000,
+      "img_name": "cb_orange"
+    },
+    {
+      "id": 7,
+      "title": "Cessa Kids Fever Drop",
+      "description": "Meredakan tantrum",
+      "category": "kids",
+      "price": 52000,
+      "img_name": "ck_red"
+    },
+    {
+      "id": 8,
+      "title": "Cessa Kids Bugs Away",
+      "description": "Mencegah gigitan nyamuk",
+      "category": "kids",
+      "price": 52000,
+      "img_name": "ck_green"
+    }
+  ]
+}
