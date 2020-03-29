@@ -1,0 +1,14 @@
+<div *ngIf="menus">
+  <div id="menu" *ngFor="let menu of menus">
+    <img src="assets/img/{{menu.img_name}}.jpg" alt="menu-image" width="100" height="100">
+    <h3>{{ menu.title }}</h3>
+    <p>{{ menu.price | currency:'IDR':'Rp. ':'3.0':'id' }}</p>
+    <p>{{ menu.description }}</p>
+    <button (click)="addToCart(menu)">Add to  cart</button>
+  </div>
+</div>
+<hr/>
+<app-cart
+  [cart] = "cart"
+></app-cart>
+
