@@ -1,9 +1,10 @@
-<nav>
+<nav *ngIf="isLogin()">
   <h1>Toko Cessa</h1>
   <a href="#">All</a>
   <a href="#">Baby</a>
   <a href="#">Kids</a>
   <p>Hello, admin!</p>
-  <a href="">logout</a>
+
+  <a href="" (click)="logout()">logout</a>
 </nav>
 <router-outlet></router-outlet>
